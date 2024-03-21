@@ -118,7 +118,7 @@
 
         @media screen and (min-width:300px) {
             h1 {
-                font-size: 3em;
+                font-size: 1em;
                 /* Adjust font size for screens wider than 600px */
             }
 
@@ -127,7 +127,7 @@
 
         @media screen and (min-width: 400px) {
             h1 {
-                font-size: 4em;
+                font-size: 2em;
                 /* Adjust font size for screens wider than 600px */
             }
 
@@ -138,7 +138,7 @@
 
         @media screen and (min-width: 510px) {
             h1 {
-                font-size: 5em;
+                font-size: 4em;
                 /* Adjust font size for screens wider than 600px */
             }
 
@@ -308,19 +308,5 @@
         </script>
 
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxGkUSLiAuz_m2T7MlHyBQS6eACgF8xGuYXNrsc0JrHvisYgzwRGttRDmdD_4GtsCwD/exec'
-            const form = document.forms['submit-to-google-sheet']
-
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-            })
-
-
-        </script>
-    </body>
 
 </html>
