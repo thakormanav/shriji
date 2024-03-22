@@ -89,7 +89,7 @@
 
             font-size: 15px;
             font-family: 'Times New Roman', Times, serif;
-            
+
         }
 
         @media screen and (max-width: 600px) {
@@ -97,15 +97,48 @@
                 padding: 10px;
             }
         }
+
+        .i1 {
+
+            height: 100px;
+            width: 140px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url(com-removebg-preview.png);
+            background-size: 100% 100%;
+        }
+
+        .i2 {
+
+            height: 100px;
+            width: 140px;
+
+            background-repeat: no-repeat;
+            background-image: url(sri-removebg-preview.png);
+            background-size: 100% 100%;
+        }
     </style>
     <title>Responsive User Inquiry Form</title>
 </head>
 
 <body>
 
+
+    
+        <div class="i1">
+
+        </div>
+
+    
+    <marquee behavior="slide" direction="right" scrollamount="20">
+        <div class="i2">
+
+        </div>
+
+    </marquee>
     <h2>User Inquiry Form</h2>
 
-    <form name="submit-to-google-sheet" method="post" autocomplete="ON">
+    <form action="thanku.html" name="submit-to-google-sheet" method="post" autocomplete="ON">
 
         <!-- Email input -->
         <label for="email">Inquiry date:-</label>
@@ -150,9 +183,9 @@
             <option value="">python</option>
 
         </select>
-<br>
+        <br>
 
-<br>
+        <br>
         <label for="">Reference</label>
 
         <select name="" id="">
